@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #642929;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 75%, transparent 0, #6c1818 75px )
+}
