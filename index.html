@@ -8,15 +8,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
     <!-- header -->
-    <div class="container"></div>
+        <div class="header">Form Validation</div>
+        <form action="http://httpbin.org/post" method="post" class="form">
     <!-- email section -->
-
+        <div class="email-section">
+            <label for="email-input">Email Address:
+            <input type="email" id="email-input" class="email"
+            name="email"></label>
+        </div>
     <!-- country and zip code section -->
-
+        <div class="country-section">
+            <label for="country-input" id="country-input">Country:
+            <select name="country" id="country-input" class="country">
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            </select>
+            </label>
+            <label for="zip-code-input" id="zip-code-input">Zip Code:
+            <input type="text" id="zip-code-input" class="zip-code" name="zip-code">
+            </label>
+        </div>
     <!-- password and password confirmation section -->
-
+        <div class="password-section">
+            <div class="password-text">Password must be 6-12 characters long</div>
+            <label for="password-input" id="password-input">Password:
+            <input type="password" id="password-input" class="password" name="password">
+            </label>
+            <label for="password-confirm-input" id="password-confirm-input">Confirm Password:
+            <input type="password" id="password-confirm-input" class="password-confirm" name="password-confirm">
+            </label>
+        </div>
     <!-- submit button -->
+    <div class="submit-section">
+        <label for="submit" id="submit">
+            <input type="submit" id="submit" name="submit">
+            </label>
+    </div>
+    </form>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
