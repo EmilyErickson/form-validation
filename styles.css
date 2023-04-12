@@ -1,12 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap');
+
+
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(83, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merriweather', 'Yeseva One', cursive, serif;
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
-    background-color: #642929;
-    opacity: 0.8;
-    background-image:  repeating-radial-gradient( circle at 75%, transparent 0, #6c1818 75px )
+    display: flex;
+    width: 75%;
+    height: 98vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+.header {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Yeseva One', cursive;
+}
+
+.form {
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr .75fr;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 1.75rem;
+    padding: 2px;
+    border-radius: 15px;
+    justify-items: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.form input, .form select {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 1.75rem;
+    width: 250px;
+
+}
+.form select {
+    font-size: 1.75rem;
+    width: 250px;
+}
+
+.email-section {
+    place-self: center;
+    text-align: center;
+    width: 95%;
+}
+
+#email-input {
+    width: min(60%, 300px);
+}
+
+.country-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+}
+
+#country-input {
+    place-self: center;
+}
+
+#zip-code-input {
+    place-self: center;
+}
+
+.password-section {
+    display: grid;
+    grid-template-rows: .5fr 1fr 1fr;
+    gap: 8px;
+    place-self: center;
+    font-size: 1.85rem;
+    text-align: center;
+}
+.password-section input {
+    width: 185px;
+}
+.password-text {
+    place-self: center;
+    font-size: .9rem;
+}
+
+#password-input {
+    place-self: center;
+}
+
+#password-confirm-input {
+    place-self: center;
+}
+
+.submit-section {
+    place-self: center;
+}
+
+#submit {
+    width: 200px;
+    height: 50px;
 }
